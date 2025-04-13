@@ -131,9 +131,6 @@ function collectStar(player, star) {
       player.x < window.innerWidth / 2
         ? Phaser.Math.Between(window.innerWidth / 2, window.innerWidth)
         : Phaser.Math.Between(0, window.innerWidth / 2);
-
-    console.log(x);
-    console.log(player.x);
     var bomb = bombs.create(x, 16, "bomb");
     bomb.setBounce(1);
     bomb.setCollideWorldBounds(true);
